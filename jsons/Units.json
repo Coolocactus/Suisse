@@ -1,17 +1,26 @@
 [
 	{
-		"name": "Phasers",
-		"unitType": "Ranged",
-		"uniqueTo": "Aliens",
-		"replaces": "Machine Gun",
-		"movement": 2,
-		"strength": 90,
-		"rangedStrength": 36,
-		"range": 2,
-		"cost": 500,
-		"requiredTech": "Ballistics",
-		"requiredResource": "Uranium",
-		"promotions": ["Logistics","Accuracy I"],
-		"attackSound": "phasers"
+		"name": "Mercenary",
+		"uniqueTo": "Suisse",
+		"replaces": "Warrior",
+		"movement": 3,
+		"strength": 10,
+		"cost": 30,
+		"obsoleteTech": "Metal Casting",
+		"upgradesTo": "Swordsman",
+		"uniques" : ["May upgrade to [Spearman] through ruins-like effects"],
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [
+			{"text": "This is your basic, club-swinging fighter."}
+	}
+	{
+		"name": "Great Great Merchant",
+		"unitType": "Civilian",
+		"uniqueTo": "Suisse",
+		"replaces": "Great Merchant",
+		"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [150] Influence",
+            "Can instantly construct a [Customs house] improvement <by consuming this unit>",
+			"Great Person - [Gold]", "Unbuildable", "Uncapturable"],
+		"movement": 15
 	}
 ]
